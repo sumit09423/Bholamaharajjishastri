@@ -17,6 +17,19 @@ $(function () {
             return false;
         }
 
+        // Validate date is in the future
+        var selectedDate = new Date(date);
+        var today = new Date();
+        today.setHours(0, 0, 0, 0); // Reset time to compare dates only
+        selectedDate.setHours(0, 0, 0, 0);
+        
+        if (selectedDate < today) {
+            var alertBox = '<div class="alert alert-danger alert-dismissable"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true"></button>Please select a future date. Past dates are not allowed.</div>';
+            $('#contact-form').find('.messages').html(alertBox);
+            $('#form_date').focus();
+            return false;
+        }
+
         // Format puja type name (convert kebab-case to readable format)
         var pujaTypeNames = {
             'annapraashan-pooja': 'Annapraashan Pooja',

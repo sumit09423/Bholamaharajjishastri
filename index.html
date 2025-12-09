@@ -858,6 +858,7 @@
                           placeholder="Preferred Date"
                           required="required"
                           data-error="Please specify Date."
+                          min=""
                         />
                       </div>
                       <div class="mb-4">
@@ -1425,6 +1426,36 @@
     <script src="assets/js/countdown.js"></script>
     <script src="assets/js/contact.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      // Set minimum date to today for date input
+      document.addEventListener('DOMContentLoaded', function() {
+        var dateInput = document.getElementById('form_date');
+        if (dateInput) {
+          // Get today's date in YYYY-MM-DD format
+          var today = new Date();
+          var year = today.getFullYear();
+          var month = String(today.getMonth() + 1).padStart(2, '0');
+          var day = String(today.getDate()).padStart(2, '0');
+          var minDate = year + '-' + month + '-' + day;
+          
+          // Set minimum date to today
+          dateInput.setAttribute('min', minDate);
+          
+          // Add validation to prevent past dates
+          dateInput.addEventListener('change', function() {
+            var selectedDate = new Date(this.value);
+            var todayDate = new Date();
+            todayDate.setHours(0, 0, 0, 0); // Reset time to compare dates only
+            
+            if (selectedDate < todayDate) {
+              alert('Please select a future date. Past dates are not allowed.');
+              this.value = '';
+              this.focus();
+            }
+          });
+        }
+      });
+    </script>
   </body>
 
   
