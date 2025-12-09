@@ -822,7 +822,7 @@
                   <form
                     id="contact-form"
                     method="post"
-                    action=""
+                    action="thankyou.html"
                     class="send"
                   >
                     <div class="messages"></div>
@@ -841,27 +841,27 @@
                       <div class="mb-4">
                         <input
                           id="form_phone"
-                          type="Number"
+                          type="tel"
                           name="phone"
                           class="custum-input"
-                          placeholder="Your Phone"
+                          placeholder="Your Phone Number"
                           required="required"
                           data-error="Please specify your Phone."
                         />
                       </div>
                       <div class="mb-4">
                         <input
-                          id="form_phone"
+                          id="form_date"
                           type="date"
                           name="date"
                           class="custum-input"
-                          placeholder="Your Phone"
+                          placeholder="Preferred Date"
                           required="required"
                           data-error="Please specify Date."
                         />
                       </div>
                       <div class="mb-4">
-                        <select class="custum-input" name="type of puja">
+                        <select class="custum-input" name="type of puja" id="form_puja" required="required">
                           <option selected disabled>
                             Select Puja Type
                           </option>
@@ -1423,6 +1423,7 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 
