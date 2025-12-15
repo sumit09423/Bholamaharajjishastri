@@ -42,7 +42,28 @@ $(function () {
             'haldi-ceremony': 'Haldi Ceremony',
             'yagnopavit-sanskar': 'Yagnopavit Sanskar',
             'vastu-shanti-pooja': 'Vastu Shanti Puja',
-            'vishwakarma-pooja': 'Vishwakarma Puja'
+            'vishwakarma-pooja': 'Vishwakarma Puja',
+            'gauri-ganesh-puja': 'Gauri Ganesh Puja',
+            'navgraha-shanti-puja': 'Navgraha Shanti Puja',
+            'griha-pravesh-puja': 'Griha Pravesh Puja (House Warming Ceremony)',
+            'vastu-puja': 'Vastu Puja',
+            'janeu-sanskar': 'Janeu Sanskar (Upanayan Ceremony)',
+            'navratri-puja': 'Navratri Puja, Path & Havan',
+            'navchandi-path': 'Navchandi Path',
+            'sunderkand-path': 'Sunderkand Path (Musical Recitation)',
+            'shrimad-bhagwat-puran-katha': 'Shrimad Bhagwat Puran Katha',
+            'shri-ramcharitmanas-path': 'Shri Ramcharitmanas Path (Musical Recitation)',
+            'rudrabhishek-puja': 'Rudrabhishek Puja with Parthiv Ling',
+            'mahamrityunjaya-jaap': 'Mahamrityunjaya Jaap',
+            'navgraha-jaap': 'Navgraha Jaap',
+            'satyanarayan-katha': 'Satyanarayan Katha (5 Chapters & 7 Chapters)',
+            'mool-shanti-puja': 'Mool Shanti Puja (27 Nakshatra Puja)',
+            'mangal-dosh-nivaran': 'Mangal Dosh Nivaran Shanti Puja',
+            'kaal-sarp-dosh-puja': 'Kaal Sarp Dosh Puja & Nivaran',
+            'engagement-puja': 'Engagement Puja (Sagai Ceremony)',
+            'wedding-ceremony': 'Wedding Ceremony (Hindu Marriage Rituals)',
+            'kundali-matching': 'Kundali Matching (Horoscope Matching)',
+            'kundali-prediction': 'Kundali Prediction & Horoscope Analysis'
         };
         var pujaTypeName = pujaTypeNames[pujaType] || pujaType;
 
